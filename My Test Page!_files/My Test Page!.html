@@ -1,0 +1,121 @@
+
+<!-- saved from url=(0052)file:///Users/nishtha/Desktop/My%20Test%20Page!.html -->
+<html class="" lang="es"><head><meta http-equiv="Content-Type Content-Language" content="text/html; charset=windows-1252" >
+    <title>My Test Page!</title>
+    <meta name="description" content="">
+    
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+
+    <link rel="stylesheet" href="./My Test Page!_files/main.css">
+    <script
+  src="https://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
+
+  <style> 
+    .hidden{
+        display: none
+        } 
+</style>
+
+    <script>
+    $(document).ready(function(){
+        console.log("I'm an awesome web developer!");
+    //     $('#donation-form').on('change', function() {
+    //         var value = $('input[name=donation_amount]:checked', '#donation-form').val()
+    //         if(value == "") {
+    //             $('#price1').removeClass("hidden");
+    //         } else {
+    //         $('#price1').addClass("hidden");
+    //         }
+    //     })
+        
+    // });
+    $('#price1').addClass("hidden")
+    $('#donation-amount--other').on('click', function() {
+        $('#price1').removeClass("hidden");
+    })
+    })
+    </script>
+    
+</head>
+<body data-gr-c-s-loaded="true" data-fc-with-sidecart="reveal">
+    <table border="1" cellpadding="0" cellspacing="0">
+     <tbody><tr><td><h4>Please donate!</h4></td></tr>
+     <tr><td>
+         <form id="donation-form" action="https://giof.foxycart.com/cart" style="display:inline-block;">
+             <h2>
+                Thanks for your donation!<br>
+                ¡Gracias para su donación!
+
+            </h2>
+             <div style="display:none;">
+                 <input name="name" type="hidden" value="Donation to GIOF">
+                 <input name="cart" type="hidden" value="checkout">
+                 <input id="price" name="price" type="hidden" value="100">
+                 <!-- <input name="empty" type="hidden" value="true" /> -->
+             </div>
+
+             <p>Your donation makes a real difference in the lives of the children we serve.</p>
+             <div class="radio-group" style="padding:0 0 0 15px;">
+                 <div><label><input name="donation_amount" type="radio" value="25{p+25}"> $25</label></div>
+                 <div><label><input name="donation_amount" type="radio" value="50{p+50}"> $50</label></div>
+                 <div><label><input checked="checked" name="donation_amount" type="radio" value="100{p+100}"> $100</label></div>
+                 <div><label><input name="donation_amount" type="radio" value="500{p+500}"> $500</label></div>
+                 <div><label><input name="donation_amount" type="radio" value="1000{p+1000}"> $1000</label></div>
+                 <div>
+                     <label id="donation-amount--other">
+                         <input name="donation_amount" type="radio" value="">Other: $<input class="hidden" id="price1" name="price" type="text">
+                     </label>
+                 </div>
+             </div>
+
+             <p>Can you help make a difference on a <strong>recurring basis</strong>?</p>
+             <div class="radio-group" style="padding:0 0 0 15px;">
+                 <div><label><input checked="checked" name="sub_frequency" type="radio" value="1m"> I would like to donate every month.</label></div>
+                 <div><label><input name="sub_frequency" type="radio" value="1m"> I would like to donate every other month.</label></div>
+                 <div><label><input name="sub_frequency" type="radio" value="1m"> I would like to donate every 3 months.</label></div>
+                 <div><label><input name="sub_frequency" type="radio" value="1m"> Just this one donation for now.</label></div>
+             </div>
+
+             <div><input type="submit" value="Donate! »" style="box-shadow: 0px 10px 14px -7px #3e7327; background: linear-gradient(to bottom, #77b55a 5%, #72b352 100%); background-color: #77b55a; border-radius: 4px; border: 1px solid #4b8f29; display: inline-block; cursor: pointer; color: #ffffff; font-family: Helvetica, sans-serif; font-size: 15px; font-weight: bold; padding: 6px 12px; text-decoration: none; text-shadow: 0px 1px 0px #5b8a3c;"></div>
+         </form>
+     </td></tr>
+     <tr><td>
+         <hr>
+     </td></tr>
+     <tr><td>
+         <from id="ticket-form" action="https://giof.foxycart.com/cart" style="display:inline-block; width:47%; vertical-align:top;">
+             <h2>
+                Buy Gala Tickets
+             </h2>
+             <div style="display:none;">
+                 <input name="name" type="hidden" value="GIOF Gala Ticket">
+                 <input id="price" name="price" type="hidden" value="100">
+                 <input name="cart" type="hidden" value="checkout">
+                 <!-- <input name="empty" type="hidden" value="true" /> -->
+             </div>
+
+             <p>How many gala tickets would you like to purchase?</p>
+             <div class="radio-group" style="padding:0 0 0 15px;">
+                 <div><label><input name="quantity" type="number" value="2" style="width:3em;"> x $100</label></div>
+             </div>
+
+             <div><input type="submit" value="Get Tickets! »" style="box-shadow: 0px 10px 14px -7px #3e7327; background: linear-gradient(to bottom, #77b55a 5%, #72b352 100%); background-color: #77b55a; border-radius: 4px; border: 1px solid #4b8f29; display: inline-block; cursor: pointer; color: #ffffff; font-family: Helvetica, sans-serif; font-size: 15px; font-weight: bold; padding: 6px 12px; text-decoration: none; text-shadow: 0px 1px 0px #5b8a3c;"></div>
+         
+     </from></td></tr>
+    </tbody></table>
+
+
+<div style="padding:100px 0;">
+    <img style="display:inline-block; margin:10px 20px;" src="./My Test Page!_files/paypal-logo-small.png" alt="paypal-logo-small" width="140" height="83"><img style="display:inline-block; margin:10px 20px;" src="./My Test Page!_files/PayWithAmazon-300x98.png" alt="PayWithAmazon" width="150" height="54">
+</div>
+
+
+<!-- FOXYCART -->
+<script src="./My Test Page!_files/loader.js" async="" defer=""></script>
+<!-- /FOXYCART -->
+
+
+
+<script src="./My Test Page!_files/foxycart.jsonp.sidecart.min.1485974606.js"></script><link rel="stylesheet" media="screen" href="./My Test Page!_files/responsive_styles.1484347057.css"><script aria-hidden="true" type="application/x-lastpass" id="hiddenlpsubmitdiv" style="display: none;"></script><script>try{(function() { for(var lastpass_iter=0; lastpass_iter < document.forms.length; lastpass_iter++){ var lastpass_f = document.forms[lastpass_iter]; if(typeof(lastpass_f.lpsubmitorig2)=="undefined"){ lastpass_f.lpsubmitorig2 = lastpass_f.submit; if (typeof(lastpass_f.lpsubmitorig2)=='object'){ continue;}lastpass_f.submit = function(){ var form=this; var customEvent = document.createEvent("Event"); customEvent.initEvent("lpCustomEvent", true, true); var d = document.getElementById("hiddenlpsubmitdiv"); if (d) {for(var i = 0; i < document.forms.length; i++){ if(document.forms[i]==form){ if (typeof(d.innerText) != 'undefined') { d.innerText=i.toString(); } else { d.textContent=i.toString(); } } } d.dispatchEvent(customEvent); }form.lpsubmitorig2(); } } }})()}catch(e){}</script><script src="./My Test Page!_files/foxycart.jsonp.sidecart.min.1485974606(1).js"></script><link rel="stylesheet" media="screen" href="./My Test Page!_files/responsive_styles.1484347057(1).css"></body></html>
